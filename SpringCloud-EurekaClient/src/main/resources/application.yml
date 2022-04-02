@@ -1,0 +1,15 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: spring-cloud-eureka-client
+eureka:
+  instance:
+    #eureka客户端需要多长时间发送心跳给eureka服务器，表明他仍然或者，默认30秒
+    lease-renewal-interval-in-seconds: 5
+    #eureka服务器在接受到实力的最后一次发出的心跳后，需要等待多久才可以将此实力删除
+    lease-expiration-duration-in-seconds: 10
+  client:
+    service-url:
+      #配置eureka服务注册中心地址 如果eureka server服务注册中心是集群部署 只配置一个其他服务注册中心也能发现
+      defaultZone: http://127.0.0.1:8761/eureka/

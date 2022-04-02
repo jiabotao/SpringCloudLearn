@@ -1,0 +1,22 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      routes:
+        - id: host_route
+          uri: lb://sentinel-web
+          #uri: http://localhost:8889
+          predicates:
+            - Path=/b/**
+          filters:
+            - StripPrefix=1
+#my-load-balanced-service:
+#  ribbon:
+#    listOfServers: localhost:9002,
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule

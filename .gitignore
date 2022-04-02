@@ -1,0 +1,27 @@
+# 项目排除路径
+/SpringCloud-Alibaba/SpringCloud-Alibaba-Nacos-Config/target/
+/SpringCloud-Alibaba/SpringCloud-Alibaba-Sentinel/target/
+/SpringCloud-Alibaba/SpringCloud-GateWay/target/
+/SpringCloud-ConfigClient/target/
+/SpringCloud-ConfigServer/target/
+/SpringCloud-ElasticSearch/target/
+/SpringCloud-EurekaClient/target/
+/SpringCloud-EurekaServer/target/
+/SpringCloud-Hbase/target/
+/SpringCloud-InfluxDB/target/
+/SpringCloud-JedisCluster/target/
+/SpringCloud-Kafka/target/
+/SpringCloud-MongoDB/target/
+/SpringCloud-MybatisPlus/target/
+/SpringCloud-Nacos/target/
+/SpringCloud-Nacos-OpenFeign-Loadbalancer/gateway-loadbalancer/target/
+/SpringCloud-Nacos-OpenFeign-Loadbalancer/loadbalancer-consumer/target/
+/SpringCloud-Nacos-OpenFeign-Loadbalancer/nacos-providerA/target/
+/SpringCloud-Nacos-OpenFeign-Loadbalancer/nacos-providerB/target/
+/SpringCloud-Oauth/SpringCloud-OauthClient/target/
+/SpringCloud-Oauth/SpringCloud-OauthServer/target/
+/SpringCloud-OpenGIS/target/
+/SpringCloud-RedissonCluster/target/
+/SpringCloud-Resilience/target/
+/SpringCloud-Spark/target/
+/SpringCloud-Zookeeper/target/

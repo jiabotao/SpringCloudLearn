@@ -1,0 +1,19 @@
+server:
+  port: 9009
+spring:
+  application:
+    name: spring-cloud-mybatis
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: localhost:8848 # nacos作为配置中心
+        file-extension: yaml
+#mybatis:
+#
+#  map-underscore-to-camel-case: false
+#mybatis-plus:
+#  type-aliases-package: com.example.mabatis.mapper
+#  configuration:
+#    map-underscore-to-camel-case: false

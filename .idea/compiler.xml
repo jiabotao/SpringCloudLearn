@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SpringCloud-OpenGIS" />
+        <module name="SpringCloud-JedisCluster" />
+        <module name="SpringCloud-Alibaba-Nacos-Config" />
+        <module name="SpringCloud-OauthClient" />
+        <module name="SpringCloud-Kafka" />
+        <module name="SpringCloud-ElasticSearch" />
+        <module name="SpringCloud-MybatisPlus" />
+        <module name="nacos-providerA" />
+        <module name="SpringCloud-Resilience" />
+        <module name="SpringCloud-ConfigServer" />
+        <module name="SpringCloud-EurekaServer" />
+        <module name="SpringCloud-OauthServer" />
+        <module name="SpringCloud-InfluxDB" />
+        <module name="nacos-providerB" />
+        <module name="loadbalancer-consumer" />
+        <module name="SpringCloud-EurekaClient" />
+        <module name="gateway-loadbalancer" />
+        <module name="SpringCloud-MongoDB" />
+        <module name="SpringCloud-Hbase" />
+        <module name="SpringCloud-Alibaba-Sentinel" />
+        <module name="SpringCloud-RedissonCluster" />
+        <module name="SpringCloud-Zookeeper" />
+        <module name="SpringCloud-GateWay" />
+        <module name="SpringCloud-Nacos" />
+        <module name="SpringCloud-Spark" />
+        <module name="SpringCloud-ConfigClient" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
