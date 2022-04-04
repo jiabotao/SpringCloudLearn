@@ -13,11 +13,11 @@ spring:
     sentinel:
       transport:
         dashboard: dockerhost:8858
-#      datasource:
-#        ds1:
-#          nacos:
-#            server-addr: dockerhost:8848
-#            dataId: ${spring.application.name}
-#            groupId: DEFAULT_GROUP
-#            data-type: json
-#            rule-type: flow
+      datasource:
+        ds1:
+          nacos:
+            server-addr: dockerhost:8848
+            dataId: ${spring.application.name}
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
