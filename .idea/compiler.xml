@@ -13,6 +13,7 @@
         <module name="SpringCloud-Kafka" />
         <module name="SpringCloud-ElasticSearch" />
         <module name="SpringCloud-MybatisPlus" />
+        <module name="SpringCloud-Nacos-Dubbo" />
         <module name="nacos-providerA" />
         <module name="SpringCloud-Resilience" />
         <module name="SpringCloud-ConfigServer" />
