@@ -1,4 +1,5 @@
-
+server:
+  port: 9982
 spring:
   application:
     name: provider-service
