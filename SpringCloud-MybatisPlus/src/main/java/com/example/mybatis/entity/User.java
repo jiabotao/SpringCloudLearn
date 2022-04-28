@@ -3,6 +3,7 @@ package com.example.mybatis.entity;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.Version;
 
 @TableName("user")
 public class User {
@@ -15,6 +16,7 @@ public class User {
     @TableField("ages")
     private Integer age;
 
+    @Version
     private String email;
 
     public Integer getId() {
