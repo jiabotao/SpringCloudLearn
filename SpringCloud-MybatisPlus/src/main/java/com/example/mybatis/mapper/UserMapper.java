@@ -1,13 +1,16 @@
 package com.example.mybatis.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.example.mybatis.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
-@Mapper
-public interface UserMapper {
+import java.util.List;
 
-    @Select("SELECT id,name,ages as age,email FROM USER WHERE name = #{name}")
-    User findByName(@Param("name") String name);
+@Mapper
+public interface UserMapper extends BaseMapper<User> {
+
+    @Select("SELECT user_id as userId ,user_name,passwd FROM tb_user WHERE user_name = #{name}")
+    List<User> findByName(@Param("name") String name);
 }

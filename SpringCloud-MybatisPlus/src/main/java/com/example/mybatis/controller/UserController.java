@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @RestController
 public class UserController {
@@ -13,7 +14,8 @@ public class UserController {
     UserService userService;
 
     @RequestMapping("/find")
-    public User findByNames(){
+    public List<User> findByNames(){
         return userService.findByName("jiabotao");
+
     }
 }

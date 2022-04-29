@@ -5,6 +5,7 @@ import com.example.mybatis.mapper.UserMapper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Service
 public class UserService {
@@ -12,8 +13,12 @@ public class UserService {
     @Resource
     UserMapper userMapper;
 
-    public User findByName(String name){
-        User user = userMapper.findByName(name);
+    public List<User> findByName(String name){
+        User a= new User();
+        a.setName("jiabotao");
+        a.setPasswd("liuxiaoxi");
+        userMapper.insert(a);
+        List<User> user = userMapper.findByName(name);
         return user;
     }
 }
