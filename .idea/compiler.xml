@@ -23,6 +23,7 @@
         <module name="nacos-providerB" />
         <module name="loadbalancer-consumer" />
         <module name="SpringCloud-EurekaClient" />
+        <module name="SpringCloud-Seata" />
         <module name="gateway-loadbalancer" />
         <module name="SpringCloud-MongoDB" />
         <module name="SpringCloud-Hbase" />

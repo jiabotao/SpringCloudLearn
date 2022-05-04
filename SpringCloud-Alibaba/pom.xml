@@ -17,6 +17,7 @@
         <module>SpringCloud-Alibaba-Sentinel</module>
         <module>SpringCloud-GateWay</module>
         <module>SpringCloud-Nacos-Dubbo</module>
+        <module>SpringCloud-Seata</module>
     </modules>
 
     <properties>
