@@ -19,7 +19,7 @@ public class TestController {
         //hbaseTemplate.createTable("jiabotao","a","b");
         //hbaseTemplate.deleteTable("jiabotao");
       //  hbaseTemplate.addColumnFamily("jiabotao","a","b");
-        hbaseTemplate.addColumnFamily("jiabotao","c","d","e");
+        hbaseTemplate.deleteColumnFamily("jiabotao","c","d","e");
        // hbaseTemplate.addColumnFamily("jiabotao","c","d");
         return false;
     }

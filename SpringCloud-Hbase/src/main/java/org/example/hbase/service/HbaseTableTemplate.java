@@ -11,6 +11,7 @@ import org.apache.hadoop.hbase.client.TableDescriptorBuilder;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 @Service
 public class HbaseTableTemplate extends HBaseNameSpaceTemplate{
@@ -21,7 +22,6 @@ public class HbaseTableTemplate extends HBaseNameSpaceTemplate{
         TableName tablename = TableName.valueOf(tableName);
         boolean tableExists = admin.tableExists(tablename);
         return tableExists;
-
     }
 
     public boolean createTable(String tableName,String... columnFamilies){
@@ -80,5 +80,20 @@ public class HbaseTableTemplate extends HBaseNameSpaceTemplate{
         }catch (IOException e){
             logger.error("查询"+tableName+"表失败，原因："+e.getStackTrace());
         }
+    }
+
+    public void deleteColumnFamily(String tableName,String... columnFamilies){
+        TableName tablename = TableName.valueOf(tableName);
+        for(int i = 0;i<columnFamilies.length;i++){
+            try {
+                admin.deleteColumnFamily(tablename,columnFamilies[i].getBytes(StandardCharsets.UTF_8));
+            }catch (InvalidFamilyOperationException e){
+                logger.error("删除"+columnFamilies[i]+"-columnFamily失败，疑似不存在");
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+
+
     }
 }
