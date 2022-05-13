@@ -1,0 +1,5 @@
+spring:
+  hbase:
+    rootdir: hdfs://mycluster/hbase
+    zookeeper:
+      quorum: mastera,masterb,masterc
