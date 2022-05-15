@@ -25,11 +25,11 @@ public class HbaseTemplate extends HbaseTableTemplate{
             Cell[] cells = result.rawCells();
             for(Cell cell:cells){
                 System.out.println("INFO:   "+cell);
-                System.out.println(new String(CellUtil.cloneRow(cell)));    //  行键
-                System.out.println(new String(CellUtil.cloneFamily(cell)));     //  列簇
-                System.out.println(new String(CellUtil.cloneQualifier(cell)));      //  字段
-                System.out.println(new String(CellUtil.cloneValue(cell)));      //  值
-                System.out.println(cell.getTimestamp());    //  时间戳
+                System.out.println(new String(CellUtil.cloneRow(cell)));  //  行键
+                System.out.println(new String(CellUtil.cloneFamily(cell)));  //  列簇
+                System.out.println(new String(CellUtil.cloneQualifier(cell))); //  字段
+                System.out.println(new String(CellUtil.cloneValue(cell))); //  值
+                System.out.println(cell.getTimestamp()); //  时间戳
             }
         }
         table.close();
