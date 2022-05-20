@@ -15,6 +15,7 @@
         <module name="SpringCloud-MybatisPlus" />
         <module name="SpringCloud-Nacos-Dubbo" />
         <module name="nacos-providerA" />
+        <module name="CommonJava-ElasticSearch" />
         <module name="SpringCloud-Resilience" />
         <module name="SpringCloud-ConfigServer" />
         <module name="SpringCloud-EurekaServer" />
